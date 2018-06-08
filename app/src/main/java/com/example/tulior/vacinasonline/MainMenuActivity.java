@@ -85,4 +85,8 @@ public class MainMenuActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void sendToCreateVacine(View v) {
+
+    }
 }

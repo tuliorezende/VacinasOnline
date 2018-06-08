@@ -8,9 +8,13 @@
     tools:context=".MainMenuActivity"
     tools:showIn="@layout/app_bar_main_menu">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="batata" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@mipmap/ic_add"
+        android:onClick="sendToCreateVacine"
+        android:layout_margin="16dp" />
 
 </android.support.constraint.ConstraintLayout>
