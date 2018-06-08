@@ -29,7 +29,12 @@
             android:theme="@style/AppTheme.WithoutBar" />
         <activity
             android:name=".AccountSuccessActivity"
-            android:theme="@style/AppTheme.WithoutBar"></activity>
+            android:theme="@style/AppTheme.WithoutBar" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:label="Editar Perfil"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SuccessDeleteAccountActivity"></activity>
     </application>
 
 </manifest>

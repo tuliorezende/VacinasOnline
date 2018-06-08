@@ -10,4 +10,7 @@
     <string name="menu_item_a">Gostaria de receber lembretes das vacinas?</string>
     <string name="great_you_r">Cadastro concluído com sucesso!</string>
     <string name="great_time_to_start">Ótimo!\n Pronto para começar.</string>
+    <string name="what_do_i_d">Excluir conta</string>
+    <string name="deleted_account">Conta excluída com sucesso!</string>
+
 </resources>
