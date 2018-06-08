@@ -34,7 +34,11 @@
             android:name=".UpdateProfileActivity"
             android:label="Editar Perfil"
             android:theme="@style/AppTheme" />
-        <activity android:name=".SuccessDeleteAccountActivity"></activity>
+        <activity android:name=".SuccessDeleteAccountActivity" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/title_activity_main_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

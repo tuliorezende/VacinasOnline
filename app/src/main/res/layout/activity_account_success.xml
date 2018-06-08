@@ -60,6 +60,7 @@
             android:layout_gravity="bottom"
             android:background="@drawable/button_shape"
             android:text="Começar"
+            android:onClick="sendToMainMenu"
             android:textColor="@color/buttonTextColor" />
 
     </FrameLayout>

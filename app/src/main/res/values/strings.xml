@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">VacinasOnline</string>
-    <string name="title_activity_teste">TesteActivity</string>
     <string name="esqueci_min">Esqueci minha senha</string>
     <string name="recuperar_m">Recuperar minha conta</string>
     <string name="voltar">Voltar</string>
@@ -12,5 +11,12 @@
     <string name="great_time_to_start">Ótimo!\n Pronto para começar.</string>
     <string name="what_do_i_d">Excluir conta</string>
     <string name="deleted_account">Conta excluída com sucesso!</string>
+    <string name="title_activity_main_menu">Vacinas Online</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
