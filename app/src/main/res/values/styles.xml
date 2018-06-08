@@ -1,0 +1,64 @@
+<resources>
+
+    <style name="AppTheme.WithoutBar" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!---Authentication-->
+
+    <style name="login">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+    <style name="esqueci_min">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+    <style name="recuperar_m">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+    <!---Recover Account-->
+    <style name="voltar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+    <!---Create Account-->
+    <style name="cadastro">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+    <!-- Reminder Information -->
+    <style name="lembretes">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+    <style name="label_lembrete">
+
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#DE000000</item>
+    </style>
+
+    <!-- Success on create account -->
+    <style name="great_you_r">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#696969</item>
+    </style>
+
+</resources>

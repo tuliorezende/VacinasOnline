@@ -4,6 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    android:orientation="vertical"
     tools:context=".RecoverAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recuperar_m"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:gravity="center_horizontal"
+            android:text="@string/recuperar_m"
+            android:textAppearance="@style/recuperar_m" />
+
+        <EditText
+            android:id="@+id/cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:hint="Informe seu CPF"
+            android:inputType="number"
+            android:textColor="#DE2D9CDB" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:onClick="sendEmailToRecoverAccount"
+            android:text="Recuperar"
+            android:textColor="@color/buttonTextColor" />
+
+        <TextView
+            android:id="@+id/voltar"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3sp"
+            android:onClick="sendToLoginAccount"
+            android:text="@string/voltar"
+            android:textAppearance="@style/voltar" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

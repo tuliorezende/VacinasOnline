@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VacinasOnline</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="esqueci_min">Esqueci minha senha</string>
+    <string name="recuperar_m">Recuperar minha conta</string>
+    <string name="voltar">Voltar</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="lembretes">Lembretes</string>
+    <string name="menu_item_o">Quando deseja receber os lembretes</string>
+    <string name="menu_item_a">Gostaria de receber lembretes das vacinas?</string>
+    <string name="great_you_r">Cadastro concluído com sucesso!</string>
+    <string name="great_time_to_start">Ótimo!\n Pronto para começar.</string>
+</resources>
