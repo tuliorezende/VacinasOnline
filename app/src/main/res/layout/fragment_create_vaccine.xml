@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vacinas_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/vacinas_"
+            android:textAppearance="@style/vacinas_" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_format" />
+
+        <TextView
+            android:id="@+id/data_"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/data_"
+            android:textAppearance="@style/vacinas_" />
+
+        <EditText
+            android:id="@+id/showCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Selecione a data"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/doses_"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/doses_"
+            android:textAppearance="@style/vacinas_" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1ª dose" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2ª dose" />
+
+        <Button
+            android:id="@+id/saveVaccine"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_shape"
+            android:text="Adicionar vacina"
+            android:textColor="@color/buttonTextColor" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

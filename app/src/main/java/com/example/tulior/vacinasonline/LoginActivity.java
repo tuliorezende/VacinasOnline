@@ -22,6 +22,11 @@ public class LoginActivity extends AppCompatActivity {
     public  void sendToCreateAccount (View v){
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
+    }
+
+    public void sendToMainMenu(View v){
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        startActivity(intent);
 
     }
 }

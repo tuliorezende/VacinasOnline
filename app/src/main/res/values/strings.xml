@@ -19,5 +19,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_teste">teste</string>
-
+    <string name="gmail">No prazo\nEstá na hora de tomar.</string>
+    <string name="vacinas_">Vacinas:</string>
+    <string name="data_">Data:</string>
+    <string name="doses_">Doses:</string>
+    <string name="do_you_want">Vacina inserida com sucesso!</string>
 </resources>

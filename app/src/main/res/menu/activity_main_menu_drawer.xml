@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:title="Locais de Vacinação" />
+            android:title="Incluir Vacina (Teste)" />
         <item
             android:id="@+id/nav_gallery"
             android:title="Sobre as Vacinas" />
