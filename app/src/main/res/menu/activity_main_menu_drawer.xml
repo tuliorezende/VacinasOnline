@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/menu_up">
         <item
-            android:id="@+id/nav_camera"
-            android:title="Incluir Vacina" />
+            android:id="@+id/nav_vaccine_local"
+            android:title="Locais de Vacinação" />
         <item
             android:id="@+id/nav_about_vaccine"
             android:title="Sobre as Vacinas" />
@@ -16,5 +16,10 @@
         <item
             android:id="@+id/nav_editprofile"
             android:title="Editar Perfil" />
+    </group>
+    <group android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/nav_add_vaccine"
+            android:title="Adicionar Vacina" />
     </group>
 </menu>

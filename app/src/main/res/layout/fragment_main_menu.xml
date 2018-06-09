@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_item_o"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/initial_legend"
+            android:textAppearance="@style/legend" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/txtNoPrazo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_check"
+                    android:gravity="center"
+                    android:text="@string/vacina_no_prazo" />
+
+
+                <TextView
+                    android:id="@+id/txtAgendadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_check"
+                    android:gravity="center"
+                    android:text="@string/vacina_agendada" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/txtRecomendada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_check"
+
+                    android:gravity="center"
+                    android:text="@string/vacina_recomendada" />
+
+
+                <TextView
+                    android:id="@+id/txtAdministradas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+
+                    android:drawableTop="@drawable/ic_check"
+                    android:gravity="center"
+
+                    android:text="@string/vacina_administrada" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/txtAnotadas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_check"
+                    android:gravity="center"
+
+                    android:text="@string/vacina_anotadas" />
+
+                <TextView
+                    android:id="@+id/txtNaoTomar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/ic_check"
+                    android:gravity="center"
+
+                    android:text="@string/vacina_nao_tomar" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/addVacine"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/button_shape"
+            android:text="Adicionar vacina"
+            android:textColor="@color/buttonTextColor" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
