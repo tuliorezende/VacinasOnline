@@ -29,6 +29,7 @@ public class RecoverAccountActivity extends AppCompatActivity {
     public void sendEmailToRecoverAccount(View v) {
         String message = "";
 
+
         if (TextUtils.isEmpty(cpf.getText().toString())) {
             message = "CPF Não Informado!";
 

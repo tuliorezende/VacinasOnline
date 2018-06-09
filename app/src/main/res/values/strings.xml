@@ -24,4 +24,5 @@
     <string name="data_">Data:</string>
     <string name="doses_">Doses:</string>
     <string name="do_you_want">Vacina inserida com sucesso!</string>
+    <string name="saiba_mais_">Saiba mais sobre a sua vacina.</string>
 </resources>

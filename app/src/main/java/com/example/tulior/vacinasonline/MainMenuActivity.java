@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.tulior.vacinasonline.Fragments.AboutVaccineFragment;
 import com.example.tulior.vacinasonline.Fragments.CreateVaccineFragment;
 
 public class MainMenuActivity extends AppCompatActivity
@@ -79,7 +80,8 @@ public class MainMenuActivity extends AppCompatActivity
             case R.id.nav_camera:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new CreateVaccineFragment()).commit();
                 break;
-            case R.id.nav_gallery:
+            case R.id.about_vaccine:
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new AboutVaccineFragment()).commit();
                 break;
             case R.id.nav_slideshow:
                 break;

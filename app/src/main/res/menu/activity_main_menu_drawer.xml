@@ -8,7 +8,7 @@
             android:id="@+id/nav_camera"
             android:title="Incluir Vacina (Teste)" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/about_vaccine"
             android:title="Sobre as Vacinas" />
         <item
             android:id="@+id/nav_slideshow"

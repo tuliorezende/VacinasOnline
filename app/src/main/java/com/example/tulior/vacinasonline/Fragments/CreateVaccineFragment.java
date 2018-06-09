@@ -48,9 +48,6 @@ public class CreateVaccineFragment extends android.support.v4.app.Fragment {
         saveVaccine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //AlertDialog.Builder dialog = new AlertDialog.Builder(baseView.getContext());
-
-                FragmentActivity t = getActivity();
 
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity()).setView(R.layout.dialog_success_create_vaccine);
                 dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
