@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="24dp"
-    tools:context=".Fragments.UpdateProfileActivity">
+    android:layout_margin="24dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,8 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:inputType="textEmailAddress"
-            android:hint="E-mail" />
+            android:hint="E-mail"
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/userPassword"
@@ -52,6 +49,7 @@
             android:inputType="textPassword" />
 
         <Button
+            android:id="@+id/confirmSaveProfile"
             android:layout_width="match_parent"
             android:layout_height="46dp"
             android:layout_marginTop="25dp"
@@ -60,17 +58,15 @@
             android:textColor="@color/buttonTextColor" />
 
         <TextView
-            android:id="@+id/what_do_i_d"
+            android:id="@+id/deleteAccount"
             android:layout_width="match_parent"
             android:layout_height="22dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
-            android:onClick="sendToDeletedAccount"
-            android:text="@string/what_do_i_d"
-            android:textAppearance="@style/what_do_i_d"
             android:gravity="center_horizontal"
-            />
+            android:text="@string/what_do_i_d"
+            android:textAppearance="@style/what_do_i_d" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

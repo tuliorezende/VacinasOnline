@@ -1,5 +1,9 @@
 <resources>
 
+    <style name="AppTheme.WithoutBar.FullScreen" parent="AppTheme.WithoutBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
     <style name="AppTheme.WithoutBar" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>

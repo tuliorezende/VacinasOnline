@@ -14,6 +14,7 @@ import android.view.MenuItem;
 
 import com.example.tulior.vacinasonline.Fragments.AboutVaccineFragment;
 import com.example.tulior.vacinasonline.Fragments.CreateVaccineFragment;
+import com.example.tulior.vacinasonline.Fragments.UpdateProfileFragment;
 
 public class MainMenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,21 +81,16 @@ public class MainMenuActivity extends AppCompatActivity
             case R.id.nav_camera:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new CreateVaccineFragment()).commit();
                 break;
-            case R.id.about_vaccine:
+            case R.id.nav_about_vaccine:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new AboutVaccineFragment()).commit();
                 break;
-            case R.id.nav_slideshow:
-                break;
-            case R.id.nav_manage:
+            case R.id.nav_editprofile:
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new UpdateProfileFragment()).commit();
                 break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void sendToCreateVacine(View v) {
-
     }
 }

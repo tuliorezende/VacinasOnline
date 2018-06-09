@@ -6,15 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:title="Incluir Vacina (Teste)" />
+            android:title="Incluir Vacina" />
         <item
-            android:id="@+id/about_vaccine"
+            android:id="@+id/nav_about_vaccine"
             android:title="Sobre as Vacinas" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_configuration"
             android:title="Configuração" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_editprofile"
             android:title="Editar Perfil" />
     </group>
 </menu>
