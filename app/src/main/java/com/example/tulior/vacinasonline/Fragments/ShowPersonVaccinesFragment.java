@@ -4,12 +4,14 @@ package com.example.tulior.vacinasonline.Fragments;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.tulior.vacinasonline.Adapters.ShowPersonVaccinesAdapter;
@@ -22,6 +24,7 @@ import java.util.List;
 public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment {
 
     ListView personVaccinesListView;
+    Button addVaccine;
 
     @Nullable
     @Override
@@ -35,6 +38,16 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccinesListView = baseView.findViewById(R.id.lstPersonVaccines);
         personVaccinesListView.setAdapter(showPersonVaccinesAdapter);
 
+        addVaccine = baseView.findViewById(R.id.addVacine);
+        addVaccine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new CreateVaccineFragment()).commit();
+                return;
+            }
+        });
+
         return baseView;
     }
 
@@ -46,7 +59,7 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccine1.VaccineName = "Hepatite B";
         personVaccine1.VaccineTotalPortion = "3";
         personVaccine1.VaccineExecutedPortion = "1";
-        personVaccine1.VaccineIcon = R.drawable.ic_check;
+        personVaccine1.VaccineIcon = R.drawable.ic_noprazo;
         personVaccine1.VaccineId = 1;
 
         personVaccinesList.add(personVaccine1);
@@ -55,7 +68,7 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccine2.VaccineName = "Poliomelite";
         personVaccine2.VaccineTotalPortion = "4";
         personVaccine2.VaccineExecutedPortion = "1";
-        personVaccine2.VaccineIcon = R.drawable.ic_check;
+        personVaccine2.VaccineIcon = R.drawable.ic_agendadas;
         personVaccine2.VaccineId = 2;
 
         personVaccinesList.add(personVaccine2);
@@ -64,7 +77,7 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccine3.VaccineName = "Gripe";
         personVaccine3.VaccineTotalPortion = "1";
         personVaccine3.VaccineExecutedPortion = "1";
-        personVaccine3.VaccineIcon = R.drawable.ic_check;
+        personVaccine3.VaccineIcon = R.drawable.ic_recomendada;
         personVaccine3.VaccineId = 3;
 
         personVaccinesList.add(personVaccine3);
@@ -73,7 +86,7 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccine4.VaccineName = "Febre Amarela";
         personVaccine4.VaccineTotalPortion = "1";
         personVaccine4.VaccineExecutedPortion = "1";
-        personVaccine4.VaccineIcon = R.drawable.ic_check;
+        personVaccine4.VaccineIcon = R.drawable.ic_recomendada;
         personVaccine4.VaccineId = 4;
 
         personVaccinesList.add(personVaccine4);

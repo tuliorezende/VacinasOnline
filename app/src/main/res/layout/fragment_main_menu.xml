@@ -33,7 +33,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/ic_check"
+                    android:drawableTop="@drawable/ic_noprazo"
                     android:gravity="center"
                     android:text="@string/vacina_no_prazo" />
 
@@ -45,7 +45,7 @@
                     android:layout_alignParentRight="true"
 
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/ic_check"
+                    android:drawableTop="@drawable/ic_agendadas"
                     android:gravity="center"
                     android:text="@string/vacina_agendada" />
             </TableRow>
@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/ic_check"
+                    android:drawableTop="@drawable/ic_recomendada"
 
                     android:gravity="center"
                     android:text="@string/vacina_recomendada" />
@@ -70,7 +70,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_weight="1"
 
-                    android:drawableTop="@drawable/ic_check"
+                    android:drawableTop="@drawable/ic_administradas"
                     android:gravity="center"
 
                     android:text="@string/vacina_administrada" />
@@ -83,7 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/ic_check"
+                    android:drawableTop="@drawable/ic_anotadas"
                     android:gravity="center"
 
                     android:text="@string/vacina_anotadas" />
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_weight="1"
-                    android:drawableTop="@drawable/ic_check"
+                    android:drawableTop="@drawable/ic_naotomar"
                     android:gravity="center"
 
                     android:text="@string/vacina_nao_tomar" />

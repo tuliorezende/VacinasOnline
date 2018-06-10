@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginLeft="21dp"
-                android:drawableLeft="@drawable/ic_check"
+                android:drawableLeft="@drawable/ic_logout"
                 android:gravity="center_vertical"
                 android:onClick="sendToLoginAccount"
                 android:text="       Sair"

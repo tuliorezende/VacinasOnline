@@ -31,6 +31,7 @@
             android:layout_marginTop="60dp"
             android:hint="Informe seu CPF"
             android:inputType="number"
+            android:id="@+id/informedCpf"
             android:textColor="#DE2D9CDB" />
 
         <EditText
@@ -38,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:hint="Informe sua Senha"
+            android:id="@+id/informedPassword"
             android:textColor="#DE2D9CDB" />
 
         <Button

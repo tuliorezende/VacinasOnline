@@ -58,6 +58,6 @@
         android:layout_centerVertical="true"
         android:background="?selectableItemBackground"
         android:padding="16dp"
-        android:src="@drawable/ic_check" />
+        android:src="@drawable/ic_pencil_edit_button" />
 
 </RelativeLayout>
