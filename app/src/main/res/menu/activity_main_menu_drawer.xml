@@ -5,14 +5,17 @@
 
     <group android:id="@+id/menu_up">
         <item
+            android:id="@+id/nav_person_list_vaccine"
+            android:title="Listar Vacinas"></item>
+        <item
             android:id="@+id/nav_vaccine_local"
-            android:title="Locais de Vacinação" />
+            android:title="Locais de Vacinação"></item>
         <item
             android:id="@+id/nav_about_vaccine"
             android:title="Sobre as Vacinas" />
         <item
-            android:id="@+id/nav_configuration"
-            android:title="Configuração" />
+            android:id="@+id/nav_vaccine_status_legend"
+            android:title="Legenda de Status" />
         <item
             android:id="@+id/nav_editprofile"
             android:title="Editar Perfil" />

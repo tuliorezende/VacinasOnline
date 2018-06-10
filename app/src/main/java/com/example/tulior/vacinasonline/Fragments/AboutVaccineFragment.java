@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListAdapter;
@@ -30,6 +31,8 @@ public class AboutVaccineFragment extends android.support.v4.app.Fragment {
 
         expListView = baseView.findViewById(R.id.lvExp);
 
+        setHasOptionsMenu(true);
+
         prepareListData();
 
         listAdapter = new com.example.tulior.vacinasonline.Adapters.ExpandableListAdapter(getActivity(), listDataHeader, listDataChild);
@@ -37,6 +40,11 @@ public class AboutVaccineFragment extends android.support.v4.app.Fragment {
         expListView.setAdapter(listAdapter);
 
         return baseView;
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        menu.clear();
     }
 
     private void prepareListData() {

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
@@ -22,6 +23,8 @@ public class VaccineLocationFragment extends android.support.v4.app.Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View baseView = inflater.inflate(R.layout.fragment_vaccine_location, container, false);
+
+        setHasOptionsMenu(true);
 
         lstView = baseView.findViewById(R.id.lstView);
 
@@ -43,5 +46,9 @@ public class VaccineLocationFragment extends android.support.v4.app.Fragment {
         return address;
     }
 
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        menu.clear();
+    }
 
 }

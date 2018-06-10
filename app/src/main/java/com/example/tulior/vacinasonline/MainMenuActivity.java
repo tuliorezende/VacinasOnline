@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import com.example.tulior.vacinasonline.Fragments.AboutVaccineFragment;
 import com.example.tulior.vacinasonline.Fragments.CreateVaccineFragment;
 import com.example.tulior.vacinasonline.Fragments.MainMenuFragment;
+import com.example.tulior.vacinasonline.Fragments.ShowPersonVaccinesFragment;
 import com.example.tulior.vacinasonline.Fragments.UpdateProfileFragment;
 import com.example.tulior.vacinasonline.Fragments.VaccineLocationFragment;
 
@@ -32,16 +33,19 @@ public class MainMenuActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+
         drawer.addDrawerListener(toggle);
+
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         FragmentTransaction fragmentManager = getSupportFragmentManager().beginTransaction();
-        fragmentManager.replace(R.id.basicLayout, new MainMenuFragment());
+        fragmentManager.replace(R.id.basicLayout, new ShowPersonVaccinesFragment());
         fragmentManager.commit();
     }
 
@@ -55,28 +59,6 @@ public class MainMenuActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -87,13 +69,17 @@ public class MainMenuActivity extends AppCompatActivity
         int id = item.getItemId();
 
         switch (id) {
+            case R.id.nav_person_list_vaccine:
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new ShowPersonVaccinesFragment());
+                break;
             case R.id.nav_vaccine_local:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new VaccineLocationFragment()).commit();
                 break;
             case R.id.nav_about_vaccine:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new AboutVaccineFragment()).commit();
                 break;
-            case R.id.nav_configuration:
+            case R.id.nav_vaccine_status_legend:
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new MainMenuFragment()).commit();
                 break;
             case R.id.nav_editprofile:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new UpdateProfileFragment()).commit();

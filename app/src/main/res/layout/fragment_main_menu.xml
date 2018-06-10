@@ -101,16 +101,6 @@
             </TableRow>
         </TableLayout>
 
-        <Button
-            android:id="@+id/addVacine"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginTop="90dp"
-            android:background="@drawable/button_shape"
-            android:text="Adicionar vacina"
-            android:textColor="@color/buttonTextColor" />
-
-
     </LinearLayout>
 
 

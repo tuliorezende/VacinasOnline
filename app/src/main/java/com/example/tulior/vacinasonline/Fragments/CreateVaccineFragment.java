@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -27,6 +28,8 @@ public class CreateVaccineFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         final View baseView = inflater.inflate(R.layout.fragment_create_vaccine, container, false);
+
+        setHasOptionsMenu(true);
 
         vaccineDate = baseView.findViewById(R.id.showCalendar);
         saveVaccine = baseView.findViewById(R.id.saveVaccine);
@@ -65,5 +68,10 @@ public class CreateVaccineFragment extends android.support.v4.app.Fragment {
         });
 
         return baseView;
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        menu.clear();
     }
 }

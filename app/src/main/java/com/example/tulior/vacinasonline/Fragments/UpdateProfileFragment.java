@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -25,6 +26,9 @@ public class UpdateProfileFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View baseView = inflater.inflate(R.layout.fragment_update_profile, container, false);
+
+setHasOptionsMenu(true);
+
         saveProfile = baseView.findViewById(R.id.confirmSaveProfile);
         deleteAccount = baseView.findViewById(R.id.deleteAccount);
 
@@ -50,5 +54,10 @@ public class UpdateProfileFragment extends android.support.v4.app.Fragment {
         });
 
         return baseView;
+    }
+
+    @Override
+    public void onPrepareOptionsMenu(Menu menu) {
+        menu.clear();
     }
 }
