@@ -18,6 +18,7 @@ import com.example.tulior.vacinasonline.Fragments.AboutVaccineFragment;
 import com.example.tulior.vacinasonline.Fragments.CreateVaccineFragment;
 import com.example.tulior.vacinasonline.Fragments.MainMenuFragment;
 import com.example.tulior.vacinasonline.Fragments.UpdateProfileFragment;
+import com.example.tulior.vacinasonline.Fragments.VaccineLocationFragment;
 
 public class MainMenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -87,6 +88,7 @@ public class MainMenuActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_vaccine_local:
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new VaccineLocationFragment()).commit();
                 break;
             case R.id.nav_about_vaccine:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new AboutVaccineFragment()).commit();

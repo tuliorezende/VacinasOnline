@@ -37,4 +37,9 @@
     <string name="saiba_mais_">Saiba mais sobre a sua vacina.</string>
     <string name="initial_legend">Legenda de status da vacina:</string>
 
+    <string name="location_1">Centro de Saúde Bairro das Indústrias – <b>Rua Maria de Loudes Manso, 80, Bairro das Indústrias</b> </string>
+    <string name="location_2">Centro de Saúde Barreiro – <b>Rua Pinheiro Chagas, 252, Barreiro</b> </string>
+    <string name="location_3">Centro de Saúde Barreiro de Cima – <b>Rua Campo Grande, 87 -Araguai</b> </string>
+    <string name="location_4">Centro de Saúde Confisco – <b>Rua Aracy Guimarães Rosa, 470 – Confisco</b> </string>
+
 </resources>
