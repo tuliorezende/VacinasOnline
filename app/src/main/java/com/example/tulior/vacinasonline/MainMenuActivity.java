@@ -70,7 +70,7 @@ public class MainMenuActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_person_list_vaccine:
-                fragmentManager.beginTransaction().replace(R.id.basicLayout, new ShowPersonVaccinesFragment());
+                fragmentManager.beginTransaction().replace(R.id.basicLayout, new ShowPersonVaccinesFragment()).commit();
                 break;
             case R.id.nav_vaccine_local:
                 fragmentManager.beginTransaction().replace(R.id.basicLayout, new VaccineLocationFragment()).commit();
