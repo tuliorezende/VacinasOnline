@@ -92,7 +92,7 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccinesList.add(personVaccine4);
 
         PersonVaccine personVaccine5 = new PersonVaccine();
-        personVaccine5.VaccineName = "Vacina contra Pneumonia";
+        personVaccine5.VaccineName = "Pneumonia";
         personVaccine5.VaccineTotalPortion = "3";
         personVaccine5.VaccineExecutedPortion = "1";
         personVaccine5.VaccineIcon = R.drawable.ic_agendadas;
@@ -101,7 +101,7 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
         personVaccinesList.add(personVaccine5);
 
         PersonVaccine personVaccine6 = new PersonVaccine();
-        personVaccine6.VaccineName = "Vacina Tríplice-viral";
+        personVaccine6.VaccineName = "Tríplice-viral";
         personVaccine6.VaccineTotalPortion = "2";
         personVaccine6.VaccineExecutedPortion = "2";
         personVaccine6.VaccineIcon = R.drawable.ic_noprazo;
