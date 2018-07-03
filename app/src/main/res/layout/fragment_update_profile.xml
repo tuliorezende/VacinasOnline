@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Nome" />
+            android:hint="Nome"
+            android:text="Josué Silveira" />
 
         <EditText
             android:id="@+id/userCpf"
@@ -22,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:hint="Cpf"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text="347.310.940-11" />
 
         <EditText
             android:id="@+id/userEmail"
@@ -30,7 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:hint="E-mail"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:text="josue_silveira@outlook.com" />
 
         <EditText
             android:id="@+id/userPassword"
@@ -38,7 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:hint="Senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:text="7897891237890" />
 
         <EditText
             android:id="@+id/userConfirmPassword"
@@ -46,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:hint="Confirmar Senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:text="7897891237890" />
 
         <Button
             android:id="@+id/confirmSaveProfile"
