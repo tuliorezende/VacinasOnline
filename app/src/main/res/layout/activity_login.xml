@@ -26,20 +26,21 @@
             android:textAppearance="@style/login" />
 
         <EditText
+            android:id="@+id/informedCpf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:hint="Informe seu CPF"
             android:inputType="number"
-            android:id="@+id/informedCpf"
             android:textColor="#DE2D9CDB" />
 
         <EditText
+            android:id="@+id/informedPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:hint="Informe sua Senha"
-            android:id="@+id/informedPassword"
+            android:inputType="textPassword"
             android:textColor="#DE2D9CDB" />
 
         <Button

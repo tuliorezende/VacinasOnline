@@ -39,7 +39,17 @@
 
     <string name="location_1">Centro de Saúde Bairro das Indústrias – <b>Rua Maria de Loudes Manso, 80, Bairro das Indústrias</b> </string>
     <string name="location_2">Centro de Saúde Barreiro – <b>Rua Pinheiro Chagas, 252, Barreiro</b> </string>
-    <string name="location_3">Centro de Saúde Barreiro de Cima – <b>Rua Campo Grande, 87 -Araguai</b> </string>
+    <string name="location_3">Centro de Saúde Barreiro de Cima – <b>Rua Campo Grande, 87 - Araguai</b> </string>
     <string name="location_4">Centro de Saúde Confisco – <b>Rua Aracy Guimarães Rosa, 470 – Confisco</b> </string>
+
+    <string name="location_5">Centro de Saúde Alcides Lins – <b>Rua Panema 275, Concórdia</b> </string>
+    <string name="location_6">Centro de Saúde Cachoeirinha – <b>Rua Borborema, 1325, Cachoeirinha</b> </string>
+    <string name="location_8">Centro de Saúde Capitão Eduardo – <b>Rua Angela Benaregis, 10 – Capitão Eduardo</b> </string>
+    <string name="location_7">Centro de Saúde Cidade Ozanan – <b>Rua Dr. Furtado de Menezes, 610, Ipiranga</b> </string>
+    <string name="location_9">Centro de Saúde Efigênia Murta de Figueiredo – <b>Rua Serra do Cipó, 170, Conj. Ribeiro de Abreu</b> </string>
+    <string name="location_10">Centro de Saúde Conjunto Paulo VI – <b>Rua da Almas, 122 – Conj Paulo VI</b> </string>
+    <string name="location_11">Centro de Saúde Dom Joaquim – <b>Av. Joaquim José Diniz, 200, Fernão Dias</b> </string>
+    <string name="location_12">Centro de Saúde Gentil Gomes – <b>Rua Manoel Passos, 580, Santa Cruz.</b> </string>
+
 
 </resources>

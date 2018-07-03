@@ -43,6 +43,15 @@ public class VaccineLocationFragment extends android.support.v4.app.Fragment {
         address.add(getString(R.string.location_3));
         address.add(getString(R.string.location_4));
 
+        address.add(getString(R.string.location_5));
+        address.add(getString(R.string.location_6));
+        address.add(getString(R.string.location_7));
+        address.add(getString(R.string.location_8));
+        address.add(getString(R.string.location_9));
+        address.add(getString(R.string.location_10));
+        address.add(getString(R.string.location_11));
+        address.add(getString(R.string.location_12));
+
         return address;
     }
 

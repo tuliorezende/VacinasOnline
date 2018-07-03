@@ -91,6 +91,32 @@ public class ShowPersonVaccinesFragment extends android.support.v4.app.Fragment 
 
         personVaccinesList.add(personVaccine4);
 
+        PersonVaccine personVaccine5 = new PersonVaccine();
+        personVaccine5.VaccineName = "Vacina contra Pneumonia";
+        personVaccine5.VaccineTotalPortion = "3";
+        personVaccine5.VaccineExecutedPortion = "1";
+        personVaccine5.VaccineIcon = R.drawable.ic_agendadas;
+        personVaccine5.VaccineId = 5;
+
+        personVaccinesList.add(personVaccine5);
+
+        PersonVaccine personVaccine6 = new PersonVaccine();
+        personVaccine6.VaccineName = "Vacina Tríplice-viral";
+        personVaccine6.VaccineTotalPortion = "2";
+        personVaccine6.VaccineExecutedPortion = "2";
+        personVaccine6.VaccineIcon = R.drawable.ic_noprazo;
+        personVaccine6.VaccineId = 6;
+
+        personVaccinesList.add(personVaccine6);
+
+        PersonVaccine personVaccine7 = new PersonVaccine();
+        personVaccine7.VaccineName = "HPV";
+        personVaccine7.VaccineTotalPortion = "1";
+        personVaccine7.VaccineExecutedPortion = "1";
+        personVaccine7.VaccineIcon = R.drawable.ic_naotomar;
+        personVaccine7.VaccineId = 7;
+
+        personVaccinesList.add(personVaccine7);
 
         return personVaccinesList;
     }
